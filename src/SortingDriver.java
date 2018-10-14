@@ -14,7 +14,7 @@ public class SortingDriver {
             i++;
         }
 
-        System.out.println("Enter\n1: Insertion Sort\n2: Selection sort.");
+        System.out.println("Enter\n1: Insertion Sort\n2: Selection sort\n3: Heapsort");
         int choice = scan.nextInt();
         switch (choice) {
             case 1:
@@ -23,6 +23,9 @@ public class SortingDriver {
                 break;
             case 2:
                 SelectionSort sels = new SelectionSort(intArr);
+                break;
+            case 3:
+                HeapSort h = new HeapSort(intArr);
                 break;
             default:
                 System.out.println("Invalid choice");
